@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>VARIABLES</title>
+</head>
+<body>
+    <script>
+      /*var let const*/
+      let nombre = "Valentina";
+      let edad = 20;
+      document.write(nombre);
+      document.write("<br>");
+      document.write(edad);
+
+      /*Para introducir datos por parte del usuario se puede utilizar el parametro "prompt"
+      su sintaxis es la siguiente:
+      let VariableEjemplo = window.prompt(mensaje, ValorPorDefecto) */
+
+       nombre = window.prompt("Ingrsa tu primer nombre: ", "Bobo imbecil no pusiste nada");
+       edad = window.prompt("Ingresa tu edad: ", "Imbecil de nuevo no pusiste nada");
+       document.write("<br>")
+       document.write("Mucho gusto ", nombre);
+       document.write("<br>") 
+       document.write("Me sorprende que tengas ", edad, " de edad ");
+
+       let relacion = "Mejor amigo"
+       let mensaje = "Soy Valentina quieres ser mi " + relacion
+       let confirmacion = window.confirm(mensaje);
+       console.log(confirmacion);
+       if(confirmacion){
+        document.write("<br>")
+        document.write(nombre, " es un gusto que quieras ser mi ", relacion);
+       }else{
+        document.write("<br>")
+        document.write(nombre, ", es una lastima que no se haya concretado lo nuestro")
+       }
+
+       /*Tipos de datos en JS 
+       - Number
+       - String
+       - Boolean
+       - Valores especiales (Null y undefined)
+       - Symbol
+       - BigInt (Para valores que superen el tamaño de Number)
+       - Object (Ejemplo Mujer.object())
+       */
+
+    </script>
+</body>
+</html>
